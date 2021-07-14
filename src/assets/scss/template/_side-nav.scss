@@ -1,0 +1,38 @@
+.side-nav {
+    height: calc(100vh - #{$header-height}); 
+    position: fixed;
+    top: $header-height;
+    box-shadow: $side-nav-box-shadow;
+    background-color: $white;
+    z-index: $zindex-navbar;
+
+    @include print {
+        display: none;
+    } 
+
+    .ant-menu-vertical .ant-menu-item,
+    .ant-menu-vertical-left .ant-menu-item, 
+    .ant-menu-vertical-right .ant-menu-item, 
+    .ant-menu-inline .ant-menu-item, 
+    .ant-menu-vertical .ant-menu-submenu-title, 
+    .ant-menu-vertical-left .ant-menu-submenu-title, 
+    .ant-menu-vertical-right .ant-menu-submenu-title, 
+    .ant-menu-inline .ant-menu-submenu-title {
+        line-height: 2.5rem;
+        height: 2.5rem;
+    }
+
+    &.side-nav-dark {
+        background-color: $menu-dark-bg;
+    }
+
+    .hide-group-title {
+        .ant-menu-item-group-title {
+            display: none;
+        }
+    }
+}
+
+.mobile-nav-menu {
+    height: calc(100vh - #{$header-height} - 10px);
+}

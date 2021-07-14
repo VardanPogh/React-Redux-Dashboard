@@ -1,0 +1,17 @@
+.ant-breadcrumb {
+    line-height: $line-height-base;
+    color: $body-color;
+    font-size: $font-size-base;
+
+    a {
+        color: $gray-light;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    > span:last-child {
+        color: $gray-dark;
+    }
+}    

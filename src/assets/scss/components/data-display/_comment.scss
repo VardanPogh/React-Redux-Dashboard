@@ -1,0 +1,51 @@
+.ant-comment-content-author {
+
+    > a,
+    > span {
+        font-size: $font-size-md;
+    }
+}
+
+.ant-comment-content-author-time {
+    color: rgba($gray-dark, 0.6);
+    > * {
+        font-size: $font-size-sm;
+    }
+}
+
+.ant-comment-content-author-name{
+    color: $gray-dark;
+    font-weight: $font-weight-semibold;
+    font-size: $font-size-md;
+
+    > * {
+        color: $gray-dark;
+
+        &:hover {
+            color: $link-color;
+        }
+    }
+
+    
+}
+.ant-comment-actions {
+    >li {
+        color: $gray;
+
+        >span {
+            color: $gray;
+            font-size: $font-size-base;
+            padding-right: 15px;
+        }
+    }
+}
+
+
+.ant-comment-avatar {
+
+    img {
+        width: $avatar-size;
+        height: $avatar-size;
+        border-radius: 50%;
+    }
+}

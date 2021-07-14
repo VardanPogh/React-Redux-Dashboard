@@ -1,0 +1,43 @@
+.ant-spin {
+    font-size: $font-size-base;
+    color: $spin-color;
+}   
+
+.ant-spin-dot {
+    i {
+        background-color: $spin-color;
+    }
+}
+
+.ant-spin-nested-loading {
+
+    >div {
+
+        >.ant-spin {
+
+            .ant-spin-dot {
+                position: absolute;
+                left: 50%;
+                margin: -20px;
+            }
+        }
+    }
+}
+
+.loading {
+    &.cover-content {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &.cover-page {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

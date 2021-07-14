@@ -1,0 +1,11 @@
+.ant-empty {
+    margin: 0  map-get($spacers, 2);
+    font-size: $empty-font-size;
+    line-height: $empty-line-height;
+    text-align: center;
+}
+
+.ant-empty-normal {
+    margin: map-get($spacers, 4) 0;
+    color: $body-color;
+}

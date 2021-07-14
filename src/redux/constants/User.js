@@ -1,0 +1,4 @@
+export const SAVING_PROFILE = "SAVING_PROFILE";
+export const SAVED_PROFILE = "SAVED_PROFILE";
+export const GET_PROFILE = "GET_PROFILE";
+export const SHOW_LOADING = "SHOW_LOADING";

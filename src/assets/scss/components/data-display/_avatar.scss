@@ -1,0 +1,88 @@
+.ant-avatar {
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    color: $body-color;
+    text-align: center;
+    background: $avatar-bg;
+    color: $white;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle; 
+    width: $avatar-size;
+    height: $avatar-size;
+    line-height: $avatar-size;
+    border-radius: $border-radius-circle; 
+
+    &.ant-avatar-icon {
+        font-size: $avatar-icon;
+    }
+}
+
+.ant-avatar-lg {
+    width: $avatar-size-lg;
+    height: $avatar-size-lg;
+    line-height: $avatar-size-lg;
+
+    > * {
+        line-height: $avatar-size-lg;
+    }    
+
+    &.ant-avatar-icon {
+        font-size: $avatar-icon-lg;
+    }
+}
+
+.ant-avatar-sm {
+    width: $avatar-size-sm;
+    height: $avatar-size-sm;
+    line-height: $avatar-size-sm;
+
+    > * {
+        line-height: $avatar-size-sm;
+    }    
+
+    &.ant-avatar-icon {
+        font-size: $avatar-icon-sm;
+    }
+}
+
+.ant-avatar-square {
+    border-radius: $border-radius;
+}
+
+@each $tone in $tone-loop {
+
+    .ant-avatar-#{nth($tone, 1)} {
+        color: #{nth($tone, 2)};
+        background: #{nth($tone, 3)};
+    }
+}    
+
+@each $state in $state-color-loop {
+    .ant-avatar-#{nth($state, 1)} {
+        color: #{nth($state, 2)};
+        background: rgba(nth($state, 2), 0.1);
+    }
+}
+
+.avatar-string {
+
+    .ant-avatar {
+        margin-left: -5px;
+        border: 2px solid $white;
+    }
+} 
+
+.avatar-status-name {
+    color: $gray-dark;
+    font-weight: $font-weight-semibold;
+
+    &.clickable {
+        cursor: pointer;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+}

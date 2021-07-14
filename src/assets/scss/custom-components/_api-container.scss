@@ -1,0 +1,103 @@
+.api-container {
+  background-color: $white;
+  padding: $card-spacer-y  $card-spacer-x;
+  border: 1px solid $card-border-color;
+  border-radius: $card-border-radius;
+  padding-top: 0;
+  overflow-x: auto;
+
+  .api-title {
+		margin-top: map-get($spacers, 4);
+
+    &.when-to-use {
+      margin-top: map-get($spacers, 4);
+    }
+
+    &.api {
+      margin-top: map-get($spacers, 4);
+
+      &.h2 {
+        border-bottom: 1px solid $border-color;
+        padding-bottom: map-get($spacers, 2);;
+        margin-bottom: map-get($spacers, 4);;
+      }
+    }
+  }
+
+  ul {
+    padding-left: 0;
+    
+    >li {
+      margin-left: 20px;
+      padding-left: 4px;
+      list-style-type: circle;
+    }
+  }
+
+  > hr {
+    display: none;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .api-code-highligher {
+		margin-bottom: map-get($spacers, 3);
+
+    code {
+      margin: 0;
+      background: transparent;
+      padding: 0;
+      border-radius: 0;
+      font-size: $font-size-base;
+      border: 0;
+      color: inherit;
+    }
+  }
+
+  table {
+    min-width: 720px;
+    width: 100%;
+    margin-bottom: 2.5em;
+    margin-top: 0.8rem;
+    font-size: 13px;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier,
+      monospace;
+    line-height: 1.5;
+    border: 1px solid $border-color;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    th {
+      padding-top: 14px;
+      border-width: 0 0 2px 0;
+      color: #5c6b77;
+      font-weight: 500;
+      white-space: nowrap;
+      background: rgba(0, 0, 0, 0.02);
+    }
+
+    td:first-child {
+      width: 20%;
+      color: #595959;
+      font-weight: 600;
+    }
+
+    th,
+    td {
+      padding: 12px;
+      border-color: $border-color;
+      border-width: 1px 0;
+      border-style: solid;
+    }
+
+    tbody tr {
+      @include transition(all 0.3s);
+
+      &:hover {
+        background: rgba(60, 90, 100, 0.04);
+      }
+    }
+  }
+}

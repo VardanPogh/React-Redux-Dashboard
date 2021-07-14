@@ -1,0 +1,11 @@
+.app-page-header {
+    @include screen-mobile-above {
+        display: flex;
+    }
+    align-items: center;
+    margin-bottom: map-get($spacers, 3);
+
+    @include print {
+        display: none;
+    } 
+}

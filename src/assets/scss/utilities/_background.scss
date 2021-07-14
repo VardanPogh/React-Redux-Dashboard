@@ -1,0 +1,41 @@
+@mixin bg-variant($parent, $color) {
+  #{$parent} {
+    background-color: $color !important;
+  }
+  a#{$parent} {
+    &:hover,
+    &:focus {
+      background-color: darken($color, 10%) !important;
+    }
+  }
+}
+
+.bg-white {
+  background-color: $white !important;
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+@include bg-variant(".bg-primary", $primary);
+
+@include bg-variant(".bg-secondary", $secondary);
+
+@include bg-variant(".bg-success", $success);
+
+@include bg-variant(".bg-info", $info);
+
+@include bg-variant(".bg-warning", $warning);
+
+@include bg-variant(".bg-danger", $danger);
+
+@include bg-variant(".bg-dark", $gray-dark);
+
+@include bg-variant(".bg-gray", $gray);
+
+@include bg-variant(".bg-gray-light", $gray-light);
+
+@include bg-variant(".bg-gray-lighter", $gray-lighter);
+
+@include bg-variant(".bg-gray-lightest", $gray-lightest);

@@ -1,0 +1,62 @@
+// usage : @include screen-desktop {...} 
+@mixin screen-desktop {
+    @media only screen and (min-width: 1440px) {
+        @content;
+    }
+}
+
+// usage : @include screen-laptop-above {...} 
+@mixin screen-laptop-above {
+    @media only screen and (min-width: 1440px) {
+        @content;
+    }
+}
+
+// usage : @include screen-laptop {...} 
+@mixin screen-laptop {
+    @media only screen and (max-width: 1440px) {
+        @content;
+    }
+}
+
+// usage : @include screen-laptop-only {...} 
+@mixin screen-laptop-only {
+    @media only screen and (min-width: 992px) and (max-width: 1440px)  {
+        @content;
+    }
+}
+
+// usage : @include screen-tablet-above {...} 
+@mixin screen-tablet-above {
+    @media only screen and (min-width: 992px) {
+        @content;
+    }
+}
+
+// usage : @include screen-tablet {...} 
+@mixin screen-tablet {
+    @media only screen and (max-width: 992px) {
+        @content;
+    }
+}
+
+// usage : @include screen-mobile-above {...} 
+@mixin screen-mobile-above {
+    @media only screen and (min-width: 767px) {
+        @content;
+    }
+}
+
+// usage : @include screen-mobile {...} 
+@mixin screen-mobile {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+// usage : @include print {...} 
+@mixin print {
+    @media print {
+        @content;
+    }
+}

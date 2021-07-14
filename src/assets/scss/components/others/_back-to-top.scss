@@ -1,0 +1,25 @@
+.ant-back-top {
+    bottom: 50px;
+    right: 50px;
+}
+
+.ant-back-top-content {
+    background-color: $primary;
+    color: $white;
+
+    &:hover,
+    &:focus {
+        background-color: darken($primary, 10%)
+    }
+}
+
+.ant-back-top-inner {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+    background-color: $primary;
+    color: $white;
+    text-align: center;
+    font-size: 20px;
+}
